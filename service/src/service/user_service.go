@@ -1,36 +1,7 @@
 package service
 
-import (
-	"albumclubio.com/domain/src/model"
-	"albumclubio.com/service/src/repository"
-)
+import "albumclubio.com/domain/src/model"
 
-type UserService struct {
-	userRepo repository.UserRepository
+type UserService interface {
+	Save(user model.User) error
 }
-
-func NewUserService(userRepo repository.UserRepository) *UserService {
-	return &UserService{
-		userRepo: userRepo,
-	}
-}
-
-func (userService UserService) Save(user model.User) error {
-	validationError := user.Validate()
-	if validationError != nil {
-		return validationError
-	}
-
-	return userService.userRepo.Save(user)
-}
-
-// func (s UserService) Duplicated(email string) error {
-// 	user, err := s.repo.FindByEmail(email)
-// 	if user != nil {
-// 		return fmt.Errorf("%s already exists", email)
-// 	}
-// 	if err != nil {
-// 		return err
-// 	}
-// 	return nil
-// }

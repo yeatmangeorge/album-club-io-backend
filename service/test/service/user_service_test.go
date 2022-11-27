@@ -11,9 +11,9 @@ import (
 )
 
 func TestUserServiceSave(t *testing.T) {
-	userRepo := &mocks.UserRepository{}
+	userRepo := &mocks.MockUserRepository{}
 	userRepo.On("Save", mock.AnythingOfType("model.User")).Return(nil)
-	userService := service.NewUserService(userRepo)
+	userService := service.NewStandardUserService(userRepo)
 
 	shouldPassErr := userService.Save(model.User{
 		Email: "toolong@gmail.com",
