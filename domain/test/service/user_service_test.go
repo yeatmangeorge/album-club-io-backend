@@ -16,12 +16,12 @@ func TestUserServiceSave(t *testing.T) {
 	userService := service.NewUserService(userRepo)
 
 	shouldPassErr := userService.Save(model.User{
-		Email: "sss",
+		Email: "toolong@gmail.com",
 	})
 	assert.Nil(t, shouldPassErr)
 
 	shouldNotPassErr := userService.Save(model.User{
-		Email: "toolong@gmail.com",
+		Email: "123",
 	})
 	assert.NotNil(t, shouldNotPassErr)
 }
