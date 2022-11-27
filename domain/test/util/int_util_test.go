@@ -3,7 +3,8 @@ package util
 import (
 	"testing"
 
-	"albumclubio.com/domain/src/util"
+	"album-club-io-backend/domain/src/util"
+
 	"github.com/stretchr/testify/assert"
 )
 

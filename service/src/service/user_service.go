@@ -1,6 +1,6 @@
 package service
 
-import "albumclubio.com/domain/src/model"
+import "album-club-io-backend/domain/src/model"
 
 type UserService interface {
 	Save(user model.User) error

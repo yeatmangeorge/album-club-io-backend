@@ -3,8 +3,9 @@ package controller_test
 import (
 	"testing"
 
-	"albumclubio.com/interface/src/controller"
-	"albumclubio.com/service/src/repository/mocks"
+	"album-club-io-backend/interface/src/controller"
+	"album-club-io-backend/service/src/repository/mocks"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

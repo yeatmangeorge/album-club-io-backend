@@ -1,8 +1,8 @@
 package service
 
 import (
-	"albumclubio.com/domain/src/model"
-	"albumclubio.com/service/src/repository"
+	"album-club-io-backend/domain/src/model"
+	"album-club-io-backend/service/src/repository"
 )
 
 type StandardUserService struct {

@@ -1,7 +1,8 @@
 package model
 
 import (
-	"albumclubio.com/domain/src/util/validate"
+	"album-club-io-backend/domain/src/util/validate"
+
 	"github.com/google/uuid"
 )
 

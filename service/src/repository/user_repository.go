@@ -1,6 +1,6 @@
 package repository
 
-import "albumclubio.com/domain/src/model"
+import "album-club-io-backend/domain/src/model"
 
 type UserRepository interface {
 	FindAll() ([]model.User, error)
