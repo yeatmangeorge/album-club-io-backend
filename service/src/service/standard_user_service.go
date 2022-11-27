@@ -2,20 +2,22 @@ package service
 
 import (
 	"albumclubio.com/domain/src/model"
-	"albumclubio.com/domain/src/repository"
+	"albumclubio.com/service/src/repository"
 )
 
-type UserService struct {
+type StandardUserService struct {
 	userRepo repository.UserRepository
 }
 
-func NewUserService(userRepo repository.UserRepository) *UserService {
-	return &UserService{
+func NewStandardUserService(
+	userRepo repository.UserRepository,
+) *StandardUserService {
+	return &StandardUserService{
 		userRepo: userRepo,
 	}
 }
 
-func (userService UserService) Save(user model.User) error {
+func (userService StandardUserService) Save(user model.User) error {
 	validationError := user.Validate()
 	if validationError != nil {
 		return validationError

@@ -1,7 +1,8 @@
 package model
 
 import (
-	"errors"
+	"albumclubio.com/domain/src/util/validate"
+	"github.com/google/uuid"
 )
 
 type User struct {
@@ -9,23 +10,34 @@ type User struct {
 	Email string
 }
 
-func (user *User) Id() string {
+//GETTERS AND SETTERS
+
+func (user *User) GetID() string {
 	return user.id
 }
 
+func (user *User) SetEmail(email string) error {
+	user.Email = email
+	return user.Validate()
+}
+
+//FUNCTIONS
+
 func (user *User) Validate() error {
-	if len([]rune(user.Email)) > 3 {
-		return errors.New("email is too short")
+	emailValidationError := validate.Email(user.Email)
+	if emailValidationError != nil {
+		return emailValidationError
 	}
+
 	return nil
 }
 
-// func NewUser(email string) User {
-// 	return User{
-// 		id:    uuid.NewString(),
-// 		email: email,
-// 	}
-// }
+func NewUser(email string) User {
+	return User{
+		id:    uuid.NewString(),
+		Email: email,
+	}
+}
 
 // func (u User) GetID() string {
 // 	return u.id
