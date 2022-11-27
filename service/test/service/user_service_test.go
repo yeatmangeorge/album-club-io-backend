@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"albumclubio.com/domain/src/model"
-	"albumclubio.com/domain/src/repository/mocks"
-	"albumclubio.com/domain/src/service"
+	"albumclubio.com/service/src/repository/mocks"
+	"albumclubio.com/service/src/service"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

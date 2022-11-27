@@ -2,7 +2,7 @@ package service
 
 import (
 	"albumclubio.com/domain/src/model"
-	"albumclubio.com/domain/src/repository"
+	"albumclubio.com/service/src/repository"
 )
 
 type UserService struct {

@@ -4,7 +4,7 @@ import (
 	"net/mail"
 
 	"albumclubio.com/domain/src/constant"
-	"albumclubio.com/domain/src/error"
+	domainerror "albumclubio.com/domain/src/error"
 )
 
 func Email(email string) error {
