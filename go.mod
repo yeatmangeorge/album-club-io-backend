@@ -1,4 +1,4 @@
-module album-club-io-backend
+module github.com/yeatmangeorge/album-club-io-backend
 
 // TODO gy 27/11/2022 Upgrade go version and move to multimodule using go workspaces or create seperate github repos
 go 1.13
