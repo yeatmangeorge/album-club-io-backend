@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"log"
 
-	"album-club-io-backend/interface/src/request"
-	"album-club-io-backend/service/src/repository"
-	"album-club-io-backend/service/src/service"
+	"github.com/yeatmangeorge/album-club-io-backend/interface/src/request"
+	"github.com/yeatmangeorge/album-club-io-backend/service/src/repository"
+	"github.com/yeatmangeorge/album-club-io-backend/service/src/service"
 )
 
 type StandardUserController struct {

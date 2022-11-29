@@ -1,6 +1,6 @@
 package request
 
-import "album-club-io-backend/domain/src/model"
+import "github.com/yeatmangeorge/album-club-io-backend/domain/src/model"
 
 type NewUserRequest struct {
 	Email string `json:"email"`

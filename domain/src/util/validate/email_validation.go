@@ -3,8 +3,8 @@ package validate
 import (
 	"net/mail"
 
-	"album-club-io-backend/domain/src/constant"
-	domainerror "album-club-io-backend/domain/src/error"
+	"github.com/yeatmangeorge/album-club-io-backend/domain/src/constant"
+	domainerror "github.com/yeatmangeorge/album-club-io-backend/domain/src/error"
 )
 
 func Email(email string) error {

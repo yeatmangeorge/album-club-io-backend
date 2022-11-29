@@ -3,7 +3,7 @@ package domainerror
 import (
 	"errors"
 
-	"album-club-io-backend/domain/src/util"
+	"github.com/yeatmangeorge/album-club-io-backend/domain/src/util"
 )
 
 // NewFieldLengthError should be thrown when a field is not the desired length.

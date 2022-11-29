@@ -3,9 +3,9 @@ package service_test
 import (
 	"testing"
 
-	"album-club-io-backend/domain/src/model"
-	"album-club-io-backend/service/src/repository/mocks"
-	"album-club-io-backend/service/src/service"
+	"github.com/yeatmangeorge/album-club-io-backend/domain/src/model"
+	"github.com/yeatmangeorge/album-club-io-backend/service/src/repository/mocks"
+	"github.com/yeatmangeorge/album-club-io-backend/service/src/service"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
